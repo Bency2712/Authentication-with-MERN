@@ -1,0 +1,14 @@
+{
+    "name": "authentication-with-mern",
+    "builds": [
+      {
+        "src": "client/package.json",
+        "use": "@vercel/static-build"
+      },
+      {
+        "src": "api/package.json",
+        "use": "@vercel/node"
+      }
+    ]
+  }
+  
