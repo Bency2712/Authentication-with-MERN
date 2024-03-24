@@ -1,6 +1,6 @@
 {
     "buildCommand": "cd client && yarn install",
-    "outputDirectory": "client/src",
+    "outputDirectory": "client/src/app.js",
     "rewrites": [
         {
           "source": "/api/(.*)",
