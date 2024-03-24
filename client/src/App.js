@@ -9,11 +9,11 @@ import axios from 'axios';
 function App() {
   const [email,setEmail] = useState('');
 
- { /*After refreshing, it will not show the logged in user, hence we will have to check if there is a cookie, if yes, then we have to get the user for the json web token
+//After refreshing, it will not show the logged in user, hence we will have to check if there is a cookie, if yes, then we have to get the user for the json web token
 //to do this we need to make a callback to api to check if we can retrieve a user from jwt
-To use it we will call a function only once when the app starts
-We will use useEffect
-*/}
+//To use it we will call a function only once when the app starts
+//We will use useEffect
+
 
  useEffect (()=>{
   axios.get('http://localhost:4000/user', {withCredentials: true})
