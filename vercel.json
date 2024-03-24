@@ -1,13 +1,15 @@
+{"builds": [{
+  "src": "client/package.json",
+  "use": "@vercel/node"
+}
+],
+"routes": [
 {
-    "buildCommand": "cd client && yarn install",
-    "outputDirectory": "client/src/",
-    "rewrites": [
-        {
-          "source": "/api/(.*)",
-          "destination": "/api/server.js"
-        },
-        {"source": "/(.*)", "destination": "/"}
-    ]
-
-    
+  "src": "/api/(.*)",
+  "dest": "/api/server.js"
+},
+{
+  "src": "/(.*)",
+  "dest": "/client/src/$1"
+}]
 }
